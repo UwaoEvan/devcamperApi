@@ -26,7 +26,6 @@ exports.updateBootcamp = (req, res, next) => {
     res.status(200).json({ mgs: 'Update a single bootcamp'})
 }
 
-
 //@desc     Delete a single bootcamp
 //@route    DELETE /api/v1/bootcamps/:id
 //@access   Admin

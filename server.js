@@ -5,7 +5,7 @@ const morgan = require('morgan')
 const bootcamps = require('./routes/bootcamps');
 
 //Load env variables
-dotenv.config({ path: './.env'});
+dotenv.config({ path: './.env' });
 
 const PORT = process.env.PORT || 5000;
 
@@ -15,7 +15,7 @@ if(process.env.NODE_ENV === 'development'){
 }
 //Routes
 
-//Mout routers
+//Mount routers
 app.use('/api/v1/bootcamps', bootcamps)
 
 app.listen(PORT, () => {
